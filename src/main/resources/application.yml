@@ -1,5 +1,22 @@
-
+logging:
+  level:
+    org.springframework.web: DEBUG
+    
 server:  port: 8888
   
-spring:  profiles:    active: native
-  cloud:    config:      server:        native:          search-locations: C:/microservice-repo
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: C:/microservice-repo  
+  
+  
+#spring:#  profiles:#    active: native
+#  cloud:#    config:#      server:
+#        git:
+#          uri: https://github.com/PauloAfonsoBatistaGoncalves/spring-cloud-microservice-repo
+#          search-paths: fornecedor
+          
